@@ -27,15 +27,6 @@ class Restaurant {
     private String address;
 }
 
-class PaymentDetail {
-    private Float amount;
-    private PaymentMethod paymentMethod;
-
-    public PaymentMethod getPaymentMethod() {
-        return paymentMethod;
-    }
-}
-
 class Order {
     private Integer ID;
     private Customer customer;
@@ -82,6 +73,15 @@ class Payment {
     }
     public PaymentMethod getPaymentMethod() {
         return this.pm;
+    }
+}
+
+class PaymentDetail {
+    private Float amount;
+    private PaymentMethod paymentMethod;
+
+    public PaymentMethod getPaymentMethod() {
+        return paymentMethod;
     }
 }
 
